@@ -18,84 +18,61 @@ Serveur Minecraft moddé — Technologie Create · Magie · Économie joueur
 
 ## 🗺️ À propos
 
-Ce dépôt contient le code source du **site web officiel** d'Arcadia: Echoes Of Power, un serveur Minecraft moddé propulsé par [Azuriom](https://azuriom.com) avec un thème personnalisé.
+Ce dépôt contient les ressources et documentations centralisées de l'organisation **Team-Arcadia**, qui gère le serveur Minecraft moddé **Arcadia: Echoes Of Power** propulsé par [Azuriom](https://azuriom.com).
 
-Le site sert de hub central pour la communauté : actualités, wiki, votes, boutique, gestion des membres et support.
+L'organisation regroupe l'ensemble des outils, mods, plugins et services qui font fonctionner notre communauté.
 
 ---
 
-## ✨ Fonctionnalités du site
+## 📦 Nos projets
 
-- 📰 **Actualités** — Articles, événements, changelog et roadmap
-- 🗳️ **Système de vote** — Classement mensuel avec récompenses
-- 🎁 **Coffre quotidien** — Récompense journalière pour les joueurs
-- 🛒 **Boutique** — Donations et avantages exclusifs via Arcadia Tokens
-- 📖 **Wiki** — Documentation complète du modpack et du serveur
-- 🎟️ **Giveaway** — Tirages au sort communautaires
-- 👥 **Espace membres** — Profils, classements, activité en temps réel
-- 💬 **Support** — Suggestions, recrutement, contact
+### 🌐 Site web & CMS
+- **[Azuriom-Theme-Arcadia](https://github.com/Team-Arcadia/Azuriom-Theme-Arcadia)** — Thème personnalisé Azuriom pour le site officiel (Blade)
+- **[Azuriom-Staff-Calendar](https://github.com/Team-Arcadia/Azuriom-Staff-Calendar)** — Plugin de calendrier staff pour Azuriom (Blade)
+- **[Azuriom-Staff-Planing](https://github.com/Team-Arcadia/Azuriom-Staff-Planing)** — Plugin de planification staff (Blade)
+- **[Azuriom-Super-Perm](https://github.com/Team-Arcadia/Azuriom-Super-Perm)** — Plugin de gestion avancée des permissions (Blade)
+- **[Cron-Manager-Azuriom](https://github.com/Team-Arcadia/Cron-Manager-Azuriom)** — Gestionnaire de tâches planifiées (PHP)
+
+### 🤖 Bots & Services
+- **[Bot-Arcadius](https://github.com/Team-Arcadia/Bot-Arcadius)** — Bot Discord officiel de la communauté (Python)
+- **[Arcadia-V2-Client](https://github.com/Team-Arcadia/Arcadia-V2-Client)** — Client web Arcadia V2 (JavaScript)
+
+### ⚙️ Mods Minecraft (NeoForge 1.21.1)
+- **[Arcadia-Games](https://github.com/Team-Arcadia/Arcadia-Games)** — Système de minijeux compétitifs (20+ jeux)
+- **[Arcadia-Dungeon](https://github.com/Team-Arcadia/Arcadia-Dungeon)** — Système de donjons avec boss adaptatifs, phases d'ondes et classements
+- **[Arcadia-Admin-Pannel](https://github.com/Team-Arcadia/Arcadia-Admin-Pannel)** — Panel d'administration Minecraft
+- **[Arcadia-LootBox](https://github.com/Team-Arcadia/Arcadia-LootBox)** — Système de coffres à butin
+- **[Arcadia-Spawn-Dimension](https://github.com/Team-Arcadia/Arcadia-Spawn-Dimension)** — Dimension de spawn personnalisée
+- **[Arcadia-Tab](https://github.com/Team-Arcadia/Arcadia-Tab)** — Système de tablist personnalisé
+- **[Arcadia-RsPolymorph](https://github.com/Team-Arcadia/Arcadia-RsPolymorph)** — Compatibilité Polymorph pour Refined Storage 2
+- **[Arcadia-lib](https://github.com/Team-Arcadia/Arcadia-lib)** — Bibliothèque partagée pour les mods Arcadia
+
+### 🔧 Utilities & Outils
+- **[discordbridge](https://github.com/Team-Arcadia/discordbridge)** — Bridge Discord pour SDLink (Java)
+- **[PlayerSync](https://github.com/Team-Arcadia/PlayerSync)** — Synchronisation de données joueurs multi-serveurs (Fork)
+- **[DeeperAndDarker](https://github.com/Team-Arcadia/DeeperAndDarker)** — Fork du mod DeeperAndDarker (Deep Dark 1.21.1)
+- **[MinecraftInvite](https://github.com/Team-Arcadia/MinecraftInvite)** — Système d'invitations Minecraft (Java)
+- **[arcadia-patch-create](https://github.com/Team-Arcadia/arcadia-patch-create)** — Outil de création de patches (Java)
+- **[ArcadiaTool](https://github.com/Team-Arcadia/ArcadiaTool)** — Suite d'outils de développement serveur
 
 ---
 
 ## 🛠️ Stack technique
 
-| Composant | Technologie |
+| Catégorie | Technologies |
 |-----------|------------|
-| CMS / Framework | [Azuriom](https://azuriom.com) (Laravel) |
-| Thème | Arcadia par *vyrriox* |
+| CMS / Framework | [Azuriom](https://azuriom.com) (Laravel · PHP) |
+| Mods Minecraft | Java (NeoForge 1.21.1) |
+| Bot Discord | Python (Discord.py) |
+| Client Web | JavaScript · Node.js |
+| Plugins Azuriom | Blade · PHP |
 | Hébergement | OVH — France |
-| Frontend | HTML · CSS · JavaScript |
-
----
-
-## 🚀 Installation locale
-
-> Prérequis : PHP 8.1+, Composer, Node.js, une base de données (MySQL/MariaDB)
-
-```bash
-# Cloner le dépôt
-git clone https://github.com/<org>/arcadia-echoes-of-power.git
-cd arcadia-echoes-of-power
-
-# Installer les dépendances PHP
-composer install
-
-# Installer les dépendances JS
-npm install && npm run build
-
-# Copier et configurer l'environnement
-cp .env.example .env
-php artisan key:generate
-
-# Lancer les migrations
-php artisan migrate --seed
-
-# Démarrer le serveur de développement
-php artisan serve
-```
-
----
-
-## 📁 Structure du projet
-
-```
-.
-├── app/                # Logique métier (Laravel / Azuriom)
-├── public/             # Assets publics (images, JS, CSS compilés)
-├── resources/
-│   ├── views/          # Templates Blade
-│   └── assets/         # Sources SCSS / JS
-├── routes/             # Définition des routes
-├── storage/            # Uploads, logs, cache
-└── themes/
-    └── arcadia/        # Thème personnalisé Arcadia
-```
 
 ---
 
 ## 🤝 Contribuer
 
-Les contributions sont les bienvenues ! Pour proposer une amélioration :
+Les contributions sont les bienvenues sur tous les projets ! Pour proposer une amélioration :
 
 1. Fork le dépôt
 2. Crée une branche : `git checkout -b feature/ma-fonctionnalite`
@@ -103,7 +80,7 @@ Les contributions sont les bienvenues ! Pour proposer une amélioration :
 4. Push : `git push origin feature/ma-fonctionnalite`
 5. Ouvre une **Pull Request**
 
-Pour les bugs ou suggestions, utilise les [Issues GitHub](../../issues) ou passe par le [formulaire de suggestion](https://www.arcadia-echoes-of-power.fr/suggest) du site.
+Pour les bugs ou suggestions, utilise les **Issues GitHub** de chaque projet ou passe par le [formulaire de suggestion](https://www.arcadia-echoes-of-power.fr/suggest) du site.
 
 ---
 
@@ -117,7 +94,9 @@ Pour les bugs ou suggestions, utilise les [Issues GitHub](../../issues) ou passe
 
 ## 📜 Licence
 
-Ce projet est propriétaire. Le thème Arcadia est développé par *vyrriox*.  
+Les différents projets possèdent leurs propres licences. Consultez chaque dépôt pour plus d'informations.
+
+Le thème Arcadia est développé par *vyrriox*.  
 Le CMS Azuriom est distribué sous licence [MIT](https://github.com/Azuriom/Azuriom/blob/master/LICENSE).
 
 © 2026 Arcadia: Echoes Of Power — Tous droits réservés.

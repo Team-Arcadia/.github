@@ -45,7 +45,10 @@ L'organisation regroupe l'ensemble des outils, mods, plugins et services qui fon
 - **[Arcadia-Spawn-Dimension](https://github.com/Team-Arcadia/Arcadia-Spawn-Dimension)** — Dimension de spawn personnalisée
 - **[Arcadia-Tab](https://github.com/Team-Arcadia/Arcadia-Tab)** — Système de tablist personnalisé
 - **[Arcadia-RsPolymorph](https://github.com/Team-Arcadia/Arcadia-RsPolymorph)** — Compatibilité Polymorph pour Refined Storage 2
-- **[Arcadia-lib](https://github.com/Team-Arcadia/Arcadia-lib)** — Bibliothèque partagée pour les mods Arcadia
+- **[Arcadia-lib-old](https://github.com/Team-Arcadia/Arcadia-lib-old)** — Bibliothèque partagée pour les mods Arcadia
+- **[Arcadia-pets](https://github.com/Team-Arcadia/Arcadia-pets)** — Rajoute des familliers à collectionner
+- **[Arcadia-ah](https://github.com/Team-Arcadia/Arcadia-ah)** — Rajoute un hotel des ventes
+- **[Arcadia-prestige](https://github.com/Team-Arcadia/Arcadia-prestige)** — Des cosmétiques (particules) optimisées coté serveur
 
 ### 🔧 Utilities & Outils
 - **[discordbridge](https://github.com/Team-Arcadia/discordbridge)** — Bridge Discord pour SDLink (Java)

@@ -12,7 +12,7 @@
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://arcadia-echoes-of-power.fr/discord)
 [![Website](https://img.shields.io/badge/Website-arcadia--echoes--of--power.fr-2E8B57?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.arcadia-echoes-of-power.fr)
-[![Players](https://img.shields.io/badge/Registered%20players-1075-B87333?style=for-the-badge&logo=minecraft&logoColor=white)](https://www.arcadia-echoes-of-power.fr/players)
+[![Players](https://img.shields.io/badge/Registered%20players-1995-B87333?style=for-the-badge&logo=minecraft&logoColor=white)](https://www.arcadia-echoes-of-power.fr/players)
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=flat-square)](#versions-and-compatibility)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.x-D7742F?style=flat-square)](#versions-and-compatibility)
@@ -111,9 +111,8 @@ Every repository name tells you **what family it belongs to** before you even op
 
 1. **Lowercase only**, words separated by hyphens. No spaces, no underscores, no capitals.
 2. **The prefix is mandatory.** A repository without a family prefix is a repository nobody can find.
-3. **The name matches the identifier.** For a mod, the part after the prefix is the mod id (`arcadia-spawndimension`
-   ships the mod `spawndimension`); for a fork, it is the upstream project name; for an Azuriom plugin, it is the plugin
-   id (`azuriom-<id>` installs into `plugins/<id>`).
+3. **The name says what the project is.** For a mod, the part after the prefix is the mod's name (`arcadia-guard` is
+   ArcadiaGuard); for a fork, it is the upstream project name; for an Azuriom plugin, it is the plugin's name.
 4. **Description in English**, one sentence, saying what the project does and for which platform.
 5. **Topics** always include `team-arcadia`, plus the platform (`neoforge`, `azuriom-plugin`, `minecraft-1-21-1`...).
 
@@ -268,11 +267,11 @@ Requirements: a local [Azuriom](https://azuriom.com) 1.1 or 1.2 install (PHP 8.1
 
 ```bash
 cd <azuriom>/plugins
-git clone https://github.com/Team-Arcadia/azuriom-<id>.git <id>
+git clone https://github.com/Team-Arcadia/azuriom-<name>.git <plugin-id>
 ```
 
-Then enable the plugin in **Admin panel > Plugins** and run the migrations if asked. The folder name must be the plugin
-id, without the `azuriom-` prefix. The theme goes into `<azuriom>/resources/themes/` the same way.
+Then enable the plugin in **Admin panel > Plugins** and run the migrations if asked. The folder name must be the `id`
+written in the plugin's `plugin.json`. The theme goes into `<azuriom>/resources/themes/` the same way.
 
 </details>
 
@@ -440,9 +439,9 @@ Le nom de chaque dépôt indique **sa famille** avant même de l'ouvrir. Le form
 
 1. **Minuscules uniquement**, mots séparés par des tirets. Pas d'espaces, pas d'underscores, pas de majuscules.
 2. **Le préfixe est obligatoire.** Un dépôt sans préfixe de famille est un dépôt que personne ne retrouve.
-3. **Le nom correspond à l'identifiant.** Pour un mod, la partie après le préfixe est le mod id
-   (`arcadia-spawndimension` livre le mod `spawndimension`) ; pour un fork, c'est le nom du projet d'origine ; pour un
-   plugin Azuriom, c'est l'id du plugin (`azuriom-<id>` s'installe dans `plugins/<id>`).
+3. **Le nom dit ce qu'est le projet.** Pour un mod, la partie après le préfixe est le nom du mod (`arcadia-guard`,
+   c'est ArcadiaGuard) ; pour un fork, c'est le nom du projet d'origine ; pour un plugin Azuriom, c'est le nom du
+   plugin.
 4. **Description en anglais**, une phrase, qui dit ce que fait le projet et pour quelle plateforme.
 5. **Topics** : toujours `team-arcadia`, plus la plateforme (`neoforge`, `azuriom-plugin`, `minecraft-1-21-1`...).
 
@@ -596,11 +595,11 @@ Prérequis : une installation locale d'[Azuriom](https://azuriom.com) 1.1 ou 1.2
 
 ```bash
 cd <azuriom>/plugins
-git clone https://github.com/Team-Arcadia/azuriom-<id>.git <id>
+git clone https://github.com/Team-Arcadia/azuriom-<name>.git <plugin-id>
 ```
 
 Activez ensuite le plugin dans **Panel admin > Plugins** et lancez les migrations si demandé. Le nom du dossier doit être
-l'id du plugin, sans le préfixe `azuriom-`. Le thème s'installe de la même façon dans `<azuriom>/resources/themes/`.
+l'`id` indiqué dans le `plugin.json` du plugin. Le thème s'installe de la même façon dans `<azuriom>/resources/themes/`.
 
 </details>
 

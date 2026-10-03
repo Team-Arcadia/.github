@@ -58,8 +58,8 @@ project. You know what a repository is before opening it.
 1. **Lowercase only**, words separated by hyphens: `arcadia-spawndimension`, never `Arcadia_SpawnDimension`.
 2. **The prefix is mandatory.** Pick it with one question: *is it our mod for Arcadia* (`arcadia-`), *our mod for
    everyone* (`mods-mc-`), or *someone else's mod we fix* (`fork-mc-`)?
-3. **The name after the prefix matches the identifier**: the mod id for a mod, the original project name for a fork,
-   the plugin id for a website plugin.
+3. **The name after the prefix says what the project is**: the mod's name for a mod, the original project name for a
+   fork, the plugin's name for a website plugin.
 4. **One-sentence description in English** and the topic `team-arcadia` on every repository.
 5. **Forks keep the original license and credits.** Our patches go on a dedicated branch (`Arcadia-fix` when needed).
 
@@ -191,8 +191,8 @@ dépôt avant même de l'ouvrir.
 2. **Le préfixe est obligatoire.** Il se choisit avec une seule question : *c'est notre mod pour Arcadia*
    (`arcadia-`), *notre mod pour tout le monde* (`mods-mc-`), ou *le mod de quelqu'un d'autre qu'on corrige*
    (`fork-mc-`) ?
-3. **Le nom après le préfixe correspond à l'identifiant** : le mod id pour un mod, le nom du projet d'origine pour un
-   fork, l'id du plugin pour un plugin du site.
+3. **Le nom après le préfixe dit ce qu'est le projet** : le nom du mod pour un mod, le nom du projet d'origine pour un
+   fork, le nom du plugin pour un plugin du site.
 4. **Une description d'une phrase en anglais** et le topic `team-arcadia` sur chaque dépôt.
 5. **Les forks gardent la licence et les crédits d'origine.** Nos correctifs vont sur une branche dédiée
    (`Arcadia-fix` si besoin).
